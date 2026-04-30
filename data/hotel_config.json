@@ -1,0 +1,183 @@
+{
+  "hotel": {
+    "name": "LuxStay Grand Hotel",
+    "address": "1 Luxury Boulevard, Manhattan, NY 10001",
+    "phone": "+1 (212) 555-0100",
+    "email": "concierge@luxstaygrand.com",
+    "check_in_time": "15:00",
+    "check_out_time": "11:00",
+    "timezone": "America/New_York"
+  },
+  "room_types": {
+    "standard": {
+      "label": "Standard Room",
+      "floor_range": [2, 5],
+      "rate_usd": 189,
+      "amenities": ["King bed", "City view", "Free WiFi", "Mini-bar", "43\" TV", "Safe"]
+    },
+    "deluxe": {
+      "label": "Deluxe Room",
+      "floor_range": [6, 12],
+      "rate_usd": 289,
+      "amenities": ["King bed", "Park view", "Free WiFi", "Mini-bar", "55\" TV", "Safe", "Espresso machine", "Bathrobe & slippers"]
+    },
+    "junior_suite": {
+      "label": "Junior Suite",
+      "floor_range": [13, 18],
+      "rate_usd": 449,
+      "amenities": ["King bed", "Separate living area", "Panoramic view", "Free WiFi", "Full mini-bar", "65\" TV", "Jacuzzi", "Butler service"]
+    },
+    "penthouse": {
+      "label": "Penthouse Suite",
+      "floor_range": [19, 20],
+      "rate_usd": 899,
+      "amenities": ["King bed + sofa bed", "Private terrace", "360° city view", "Free WiFi", "Full bar", "85\" TV", "Private pool", "24/7 Butler", "Limousine service"]
+    }
+  },
+  "rooms": [
+    {"number": "201", "type": "standard", "status": "available"},
+    {"number": "202", "type": "standard", "status": "occupied"},
+    {"number": "203", "type": "standard", "status": "available"},
+    {"number": "204", "type": "standard", "status": "available"},
+    {"number": "205", "type": "standard", "status": "maintenance"},
+    {"number": "301", "type": "standard", "status": "available"},
+    {"number": "302", "type": "standard", "status": "occupied"},
+    {"number": "303", "type": "standard", "status": "available"},
+    {"number": "601", "type": "deluxe", "status": "available"},
+    {"number": "602", "type": "deluxe", "status": "occupied"},
+    {"number": "603", "type": "deluxe", "status": "available"},
+    {"number": "701", "type": "deluxe", "status": "available"},
+    {"number": "702", "type": "deluxe", "status": "available"},
+    {"number": "1301", "type": "junior_suite", "status": "available"},
+    {"number": "1302", "type": "junior_suite", "status": "occupied"},
+    {"number": "1401", "type": "junior_suite", "status": "available"},
+    {"number": "1901", "type": "penthouse", "status": "available"},
+    {"number": "2001", "type": "penthouse", "status": "occupied"}
+  ],
+  "reservations": [
+    {
+      "id": "RES-2024-001",
+      "guest_name": "James Wilson",
+      "email": "j.wilson@email.com",
+      "phone": "+1-555-0201",
+      "room_type": "deluxe",
+      "check_in": "2024-12-20",
+      "check_out": "2024-12-24",
+      "guests": 2,
+      "status": "confirmed",
+      "special_requests": "Anniversary celebration, champagne on arrival",
+      "loyalty_tier": "Gold"
+    },
+    {
+      "id": "RES-2024-002",
+      "guest_name": "Sarah Chen",
+      "email": "sarah.chen@corp.com",
+      "phone": "+1-555-0202",
+      "room_type": "junior_suite",
+      "check_in": "2024-12-21",
+      "check_out": "2024-12-23",
+      "guests": 1,
+      "status": "confirmed",
+      "special_requests": "Late checkout if possible, quiet room",
+      "loyalty_tier": "Platinum"
+    },
+    {
+      "id": "RES-2024-003",
+      "guest_name": "Michael Torres",
+      "email": "mtorres@gmail.com",
+      "phone": "+1-555-0203",
+      "room_type": "standard",
+      "check_in": "2024-12-19",
+      "check_out": "2024-12-22",
+      "guests": 3,
+      "status": "checked_in",
+      "room_assigned": "303",
+      "special_requests": "Extra cot for child",
+      "loyalty_tier": "Silver"
+    },
+    {
+      "id": "RES-2024-004",
+      "guest_name": "Emma Roberts",
+      "email": "emma.r@business.com",
+      "phone": "+1-555-0204",
+      "room_type": "penthouse",
+      "check_in": "2024-12-22",
+      "check_out": "2024-12-26",
+      "guests": 2,
+      "status": "confirmed",
+      "special_requests": "Vegan welcome amenities, flowers",
+      "loyalty_tier": "Diamond"
+    }
+  ],
+  "room_service_menu": {
+    "breakfast": [
+      {"item": "Continental Breakfast", "price": 28},
+      {"item": "Full American Breakfast", "price": 36},
+      {"item": "Eggs Benedict", "price": 24},
+      {"item": "Avocado Toast & Poached Eggs", "price": 22},
+      {"item": "Acai Bowl", "price": 18},
+      {"item": "Fresh Fruit Platter", "price": 16}
+    ],
+    "mains": [
+      {"item": "Club Sandwich", "price": 26},
+      {"item": "Wagyu Beef Burger", "price": 38},
+      {"item": "Grilled Salmon", "price": 44},
+      {"item": "Caesar Salad", "price": 22},
+      {"item": "Truffle Pasta", "price": 36},
+      {"item": "Margherita Pizza", "price": 28}
+    ],
+    "desserts": [
+      {"item": "Chocolate Lava Cake", "price": 18},
+      {"item": "New York Cheesecake", "price": 16},
+      {"item": "Ice Cream Selection", "price": 14}
+    ],
+    "beverages": [
+      {"item": "Champagne (Moët)", "price": 85},
+      {"item": "Bottle of Red Wine", "price": 65},
+      {"item": "Craft Cocktail", "price": 22},
+      {"item": "Fresh Juice", "price": 12},
+      {"item": "Artisan Coffee", "price": 8},
+      {"item": "Sparkling Water (1L)", "price": 7},
+      {"item": "Soft Drinks", "price": 6}
+    ],
+    "amenities": [
+      {"item": "Extra Towels (set of 2)", "price": 0},
+      {"item": "Extra Pillows", "price": 0},
+      {"item": "Toiletry Kit", "price": 0},
+      {"item": "Ironing Kit", "price": 0},
+      {"item": "Yoga Mat", "price": 0},
+      {"item": "Pillow Menu Upgrade", "price": 15},
+      {"item": "Aromatherapy Kit", "price": 25},
+      {"item": "Flower Arrangement", "price": 45}
+    ]
+  },
+  "facilities": {
+    "restaurant": "The Grand Brasserie — open 6:30am–11pm (Level 1)",
+    "bar": "Sky Lounge Bar — open 5pm–2am (Level 20)",
+    "spa": "LuxSpa & Wellness — open 7am–10pm (Level 3)",
+    "gym": "Fitness Centre — open 24 hours (Level 3)",
+    "pool": "Rooftop Pool — open 8am–9pm (Level 19)",
+    "business_centre": "Business Hub — open 24 hours (Level 2)",
+    "concierge_desk": "Lobby, open 24 hours"
+  },
+  "local_recommendations": {
+    "restaurants": [
+      "Le Bernardin — Legendary French seafood, 10 min walk",
+      "Nobu — Japanese fusion, 8 min walk",
+      "Per Se — Thomas Keller's 3-Michelin star, 12 min walk",
+      "The Smith — Casual American brasserie, 5 min walk"
+    ],
+    "attractions": [
+      "Central Park — 6 min walk",
+      "MoMA (Museum of Modern Art) — 8 min walk",
+      "Fifth Avenue Shopping — 4 min walk",
+      "Broadway Theater District — 15 min walk"
+    ],
+    "transport": [
+      "JFK Airport — 45 min by taxi/Uber ($65-85), 60 min by AirTrain+Subway ($10)",
+      "LaGuardia Airport — 30 min by taxi/Uber ($45-65)",
+      "Nearest Subway — 57th St-7th Ave (2 min walk)",
+      "Hotel car service available — ask concierge"
+    ]
+  }
+}
